@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Profile.scss";
 import Pic from "../../../images/pro.jpg";
 import Typical from "react-typical";
@@ -10,10 +10,16 @@ const Profile = () => {
           <img src={Pic} alt="" />
         </div>
         <div className="image_page">
+          <Typical
+            className="typeing_header"
+            steps={["Who is Sam ?", 3000]}
+            loop={1}
+            wrapper="h1"
+          />
           <h1>Hi, My name is Sam and I am a </h1>
           <Typical
             className="typeing"
-            steps={["Full-Stack Software Engineer and Personal Trainer.", 3000]}
+            steps={["Full-Stack Software Engineer and Personal Trainer", 3000]}
             loop={1}
             wrapper="p"
           />

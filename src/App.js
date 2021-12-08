@@ -10,7 +10,6 @@ import {
   Work,
   Contact,
 } from "./components";
-import SmoothList from "react-smooth-list";
 
 function App() {
   const [state, setState] = useState({
@@ -20,7 +19,6 @@ function App() {
 
   const toggleSidebar = e => {
     let key = `${e.currentTarget.parentNode.id}Open`;
-    console.log(key);
     setState({ ...state, [key]: !state[key] });
   };
   let leftOpen = state.leftOpen ? "open" : "closed";
