@@ -11,13 +11,13 @@
 // }
 
 div {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   color: rgb(231, 231, 231);
 }
 
 :root {
   --landscape-width: 25; // % OR vw for responsive window resizing!
-  --portrait-width: 80vw;
+  --portrait-width: 100vw;
   --header-height: 4rem;
   --header2-height: 1rem;
   --secs: 0.4s;
@@ -59,6 +59,9 @@ div {
 // Main area specific style:
 #main {
   flex-grow: 1;
+  @media (orientation: portrait) {
+    width: var(--portrait-width);
+  }
   .header {
     @media (orientation: landscape) {
       .title {
@@ -99,6 +102,7 @@ div {
     transition: transform var(--secs); // <-- Portrait AND landscape!
     @media (orientation: portrait) {
       width: var(--portrait-width);
+      backdrop-filter: blur(2rem);
     }
     @media (orientation: landscape) {
       width: calc(1vw * var(--landscape-width));
@@ -133,6 +137,7 @@ div {
     transition: transform var(--secs); // <-- Portrait AND landscape!
     @media (orientation: portrait) {
       width: var(--portrait-width);
+      backdrop-filter: blur(2rem);
     }
     @media (orientation: landscape) {
       width: calc(1vw * var(--landscape-width));

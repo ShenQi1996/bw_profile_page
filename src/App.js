@@ -36,7 +36,7 @@ function App() {
               <h3 className="title"> </h3>
             </div>
             <div className="content">
-              <Navbar />
+              <Navbar state={state} setState={setState} />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer state={state} setState={setState} />
     </div>
   );
 }

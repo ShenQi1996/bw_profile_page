@@ -4,4 +4,69 @@
   bottom: 0;
   width: 100%;
   z-index: 6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 1px solid white;
+  align-items: center;
+  font-size: 1.2rem;
+  @media (orientation: portrait) {
+    font-size: 1rem;
+  }
+
+  .mobile {
+    display: none;
+    @media (orientation: portrait) {
+      display: flex !important;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+      }
+      a::after {
+        content: "";
+        width: 0px;
+        height: 4px;
+        display: block;
+        background: lightgray;
+        transition: 300ms;
+      }
+      a:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .window {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    @media (orientation: portrait) {
+      display: none !important;
+    }
+    div {
+      display: flex;
+      .small {
+        font-size: 1.3rem;
+      }
+      p {
+        padding-left: 10%;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a::after {
+          content: "";
+          width: 0px;
+          height: 4px;
+          display: block;
+          background: lightgray;
+          transition: 300ms;
+        }
+        a:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

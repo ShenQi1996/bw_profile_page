@@ -2,15 +2,28 @@ import React from "react";
 import "./Navbar.scss";
 import SmoothList from "react-smooth-list";
 
-const Navbar = () => {
+const Navbar = ({ state, setState }) => {
+  const handleClick = e => {
+    setState(!state);
+  };
   return (
     <div className="navbar">
       <SmoothList>
-        <a href="#Profile">Sam</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Work">Works</a>
-        <a href="#Education">Education</a>
-        <a href="#Contact">Contact</a>
+        <a onClick={handleClick} href="#Profile">
+          Sam
+        </a>
+        <a onClick={handleClick} href="#Skills">
+          Skills
+        </a>
+        <a onClick={handleClick} href="#Work">
+          Works
+        </a>
+        <a onClick={handleClick} href="#Education">
+          Education
+        </a>
+        <a onClick={handleClick} href="#Contact">
+          Contact
+        </a>
       </SmoothList>
     </div>
   );
