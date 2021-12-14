@@ -12,7 +12,7 @@
 
 div {
   // outline: 1px solid red;
-  color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
 }
 
 :root {
@@ -27,8 +27,8 @@ div {
 .app {
   display: flex;
   flex-direction: column;
-  background: url("./images/background.jpg") no-repeat center center fixed;
-  background-size: cover;
+  // background: url("./images/background.jpg") no-repeat center center fixed;
+  // background-size: cover;
   height: 100%;
   overflow: hidden;
 }

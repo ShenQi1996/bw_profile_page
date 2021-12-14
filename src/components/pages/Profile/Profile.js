@@ -1,21 +1,27 @@
 import React from "react";
 import "./Profile.scss";
-import Pic from "../../../images/pro.jpg";
+import Pic from "../../../images/pro2.jpg";
 import Typical from "react-typical";
+import Pic_top from "../../../images/pro_top.jpg";
+import Pic_right from "../../../images/ring.png";
+import Pic_btn_left from "../../../images/7cfc3ae8339a7200d96688126524b53a.jpg";
 const Profile = () => {
   return (
     <div className="profile" id="Profile">
+      <div className="profile_header">
+        <Typical
+          className="typeing_header"
+          steps={["Sam", 3000]}
+          loop={1}
+          wrapper="h1"
+        />
+      </div>
       <div className="profile_content">
-        <div className="image_content">
-          <img src={Pic} alt="" />
-        </div>
         <div className="image_page">
-          <Typical
-            className="typeing_header"
-            steps={["Who is Sam ?", 3000]}
-            loop={1}
-            wrapper="h1"
-          />
+          <div className="image_div">
+            <img className="pro_pic2" src={Pic_top} />
+            <img className="pro_pic3" src={Pic_right} />
+          </div>
           <h1>Hi, My name is Sam and I am a </h1>
           <Typical
             className="typeing"
@@ -48,6 +54,12 @@ const Profile = () => {
             that helped me.
           </p>
         </div>
+        <div className="image_content">
+          <img src={Pic} alt="" />
+        </div>
+      </div>
+      <div className="pro_btn">
+        <img className="pro_pic4" src={Pic_btn_left} />
       </div>
     </div>
   );

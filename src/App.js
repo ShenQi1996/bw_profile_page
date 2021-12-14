@@ -33,7 +33,7 @@ function App() {
           </div>
           <div className={`sidebar ${leftOpen}`}>
             <div className="header">
-              <h3 className="title"> </h3>
+              <h3 className="title">Sam Qi</h3>
             </div>
             <div className="content">
               <Navbar state={state} setState={setState} />
