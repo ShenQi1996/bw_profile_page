@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   border-top: 1px solid black;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: white;
   @media (orientation: portrait) {
     font-size: 1rem;
@@ -22,7 +22,7 @@
       a {
         text-decoration: none;
         color: black;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       a::after {
         content: "";

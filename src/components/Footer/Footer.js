@@ -19,7 +19,11 @@ const Footer = ({ state, setState }) => {
         <div>
           <GitHubIcon className="small" />
           <p>
-            <a href="https://github.com/ShenQi1996" target="_blank">
+            <a
+              href="https://github.com/ShenQi1996"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           </p>
@@ -27,7 +31,11 @@ const Footer = ({ state, setState }) => {
         <div>
           <LinkedInIcon className="small" />
           <p>
-            <a href="https://www.linkedin.com/in/shenqi1993/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/shenqi1993/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Linkedin
             </a>
           </p>
@@ -39,7 +47,11 @@ const Footer = ({ state, setState }) => {
         <div>
           <CalendarTodayIcon className="small" />
           <p>
-            <a href="https://calendly.com/qisam" target="_blank">
+            <a
+              href="https://calendly.com/qisam"
+              target="_blank"
+              rel="noreferrer"
+            >
               Calendly
             </a>
           </p>

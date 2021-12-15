@@ -4,7 +4,7 @@ import Pic from "../../../images/pro2.jpg";
 import Typical from "react-typical";
 import Pic_top from "../../../images/pro_top.jpg";
 import Pic_right from "../../../images/ring.png";
-import Pic_btn_left from "../../../images/7cfc3ae8339a7200d96688126524b53a.jpg";
+import Pic_btn_left from "../../../images/images.png";
 const Profile = () => {
   return (
     <div className="profile" id="Profile">
@@ -19,8 +19,8 @@ const Profile = () => {
       <div className="profile_content">
         <div className="image_page">
           <div className="image_div">
-            <img className="pro_pic2" src={Pic_top} />
-            <img className="pro_pic3" src={Pic_right} />
+            <img className="pro_pic2" src={Pic_top} alt="" />
+            <img className="pro_pic3" src={Pic_right} alt="" />
           </div>
           <h1>Hi, My name is Sam and I am a </h1>
           <Typical
@@ -29,7 +29,6 @@ const Profile = () => {
             loop={1}
             wrapper="p"
           />
-
           <p>I am a person that loves</p>
           <Typical
             className="typeing"
@@ -59,7 +58,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="pro_btn">
-        <img className="pro_pic4" src={Pic_btn_left} />
+        <img className="pro_pic4" src={Pic_btn_left} alt="" />
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const Navbar = ({ state, setState }) => {
           Skills
         </a>
         <a onClick={handleClick} href="#Work">
-          Works
+          Projects
         </a>
         <a onClick={handleClick} href="#Education">
           Education
@@ -25,7 +25,7 @@ const Navbar = ({ state, setState }) => {
           Contact
         </a>
         <div className="navbar_img_container">
-          <img src={Pic} />
+          <img src={Pic} alt="" />
         </div>
       </SmoothList>
     </div>
