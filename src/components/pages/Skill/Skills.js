@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skill.scss";
-import Pic1 from "../../../images/pngtree-one-line-art-drawing-of-a-person-playing-a-kite-vector-png-image_316363.jpg";
+import Pic1 from "../../../images/istockphoto-1173067172-612x612.jpg";
 const Skills = () => {
   return (
     <div className="skills" id="Skills">

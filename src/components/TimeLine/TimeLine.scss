@@ -1,4 +1,25 @@
 .timeline {
-  border: 1px solid red;
-  flex: 0.15;
+  background-image: url("../../images/time.png");
+  background-repeat: no-repeat;
+  background-size: calc(10rem);
+  background-position: bottom;
+  height: 90%;
+  padding: 1rem;
+  margin-right: 5rem;
+  .timeline_conainter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    div {
+      border-bottom: 2px dotted black;
+      width: 70%;
+      h1 {
+        font-size: 1.3rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
 }

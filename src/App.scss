@@ -18,10 +18,11 @@ div {
 :root {
   --landscape-width: 25; // % OR vw for responsive window resizing!
   --portrait-width: 100vw;
+  --landscape-width2: 30;
   --header-height: 4rem;
   --header2-height: 1rem;
   --secs: 0.4s;
-  --navbar-front: 2rem;
+  --navbar-front: 1.5rem;
 }
 
 .app {
@@ -140,7 +141,7 @@ div {
       backdrop-filter: blur(2rem);
     }
     @media (orientation: landscape) {
-      width: calc(1vw * var(--landscape-width));
+      width: calc(1vw * var(--landscape-width2));
     }
     .header {
       width: calc(100% - var(--header-height));

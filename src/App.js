@@ -10,7 +10,8 @@ import {
   Work,
   Contact,
 } from "./components";
-
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function App() {
   const [state, setState] = useState({
     leftOpen: true,
@@ -23,6 +24,13 @@ function App() {
   };
   let leftOpen = state.leftOpen ? "open" : "closed";
   let rightOpen = state.rightOpen ? "open" : "closed";
+
+  let time_line;
+  if (rightOpen === "closed") {
+    time_line = <ArrowBackIcon />;
+  } else {
+    time_line = <ArrowForwardIcon />;
+  }
 
   return (
     <div className="app">
@@ -52,7 +60,7 @@ function App() {
         </div>
         <div id="right" className={rightOpen}>
           <div className="icon2" onClick={toggleSidebar}>
-            {rightOpen}
+            {time_line}
           </div>
           <div className={`sidebar ${rightOpen}`}>
             <div className="header">
